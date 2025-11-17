@@ -1,0 +1,2149 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/3raoo/ontologies/2025/10/SmallOntology_V5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/3raoo/ontologies/2025/10/SmallOntology_V5">
+    <Prefix name="" IRI="http://www.semanticweb.org/3raoo/ontologies/2025/10/SmallOntology_V5/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.semanticweb.org/3raoo/ontologies/2025/10/doid_hypertension</Import>
+    <Import>http://www.semanticweb.org/3raoo/ontologies/2025/10/doid_obesity</Import>
+    <Declaration>
+        <Class IRI="#Gender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighCalorieMeal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighSodiumMeal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HypertensionFriendlyMeal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObesityFriendlyMeal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGender"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHealthCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRiskFactorFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSuitableFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#recommendedFor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPotassium_g"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProtein_g"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSodium_mg"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTotalFat_g"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTotalSugars_g"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_Ingredients"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BBQ_Chicken_Salad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cheeseburger_Casserole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chicken_Parmesan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chinese_Fried_Noodles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Crispy_Fried_Chicken"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Female"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fettuccine_Alfredo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#French_Onion_Soup"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fried_Rice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grilled_Chicken_Breasts"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grilled_Lemon_Chicken"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ham_and_Cheese_Casserole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hypertension_Condition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Indian_Butter_Chicken"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Malaysian_Nasi_Lemak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Male"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Obesity_Condition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sausage_Crescent_Rolls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tiramisu_Cheesecake"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#User_Female_Both"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#User_Female_Hypertension"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#User_Female_Obesity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#User_Male_Both"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#User_Male_Hypertension"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#User_Male_Obesity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Malaysian_(Roti_Canai)_with_Curried_Lentil_Dip"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="http://www.w3.org/XML/1998/namespacestring"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#HighCalorieMeal"/>
+        <Class IRI="#Meal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSodiumMeal"/>
+        <Class IRI="#Meal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HypertensionFriendlyMeal"/>
+        <Class IRI="#Meal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObesityFriendlyMeal"/>
+        <Class IRI="#Meal"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Meal"/>
+        <NamedIndividual IRI="#BBQ_Chicken_Salad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meal"/>
+        <NamedIndividual IRI="#Cheeseburger_Casserole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meal"/>
+        <NamedIndividual IRI="#Chicken_Parmesan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meal"/>
+        <NamedIndividual IRI="#Chinese_Fried_Noodles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meal"/>
+        <NamedIndividual IRI="#Crispy_Fried_Chicken"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gender"/>
+        <NamedIndividual IRI="#Female"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meal"/>
+        <NamedIndividual IRI="#Fettuccine_Alfredo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meal"/>
+        <NamedIndividual IRI="#French_Onion_Soup"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meal"/>
+        <NamedIndividual IRI="#Fried_Rice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meal"/>
+        <NamedIndividual IRI="#Grilled_Chicken_Breasts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meal"/>
+        <NamedIndividual IRI="#Grilled_Lemon_Chicken"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meal"/>
+        <NamedIndividual IRI="#Ham_and_Cheese_Casserole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/DOID_10763"/>
+        <NamedIndividual IRI="#Hypertension_Condition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meal"/>
+        <NamedIndividual IRI="#Indian_Butter_Chicken"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meal"/>
+        <NamedIndividual IRI="#Malaysian_Nasi_Lemak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gender"/>
+        <NamedIndividual IRI="#Male"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/DOID_9970"/>
+        <NamedIndividual IRI="#Obesity_Condition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meal"/>
+        <NamedIndividual IRI="#Sausage_Crescent_Rolls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meal"/>
+        <NamedIndividual IRI="#Tiramisu_Cheesecake"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#User_Female_Both"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#User_Female_Hypertension"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#User_Female_Obesity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#User_Male_Both"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#User_Male_Hypertension"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#User_Male_Obesity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meal"/>
+        <NamedIndividual IRI="#Malaysian_(Roti_Canai)_with_Curried_Lentil_Dip"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#User_Female_Both"/>
+        <NamedIndividual IRI="#Female"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHealthCondition"/>
+        <NamedIndividual IRI="#User_Female_Both"/>
+        <NamedIndividual IRI="#Hypertension_Condition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHealthCondition"/>
+        <NamedIndividual IRI="#User_Female_Both"/>
+        <NamedIndividual IRI="#Obesity_Condition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#User_Female_Hypertension"/>
+        <NamedIndividual IRI="#Female"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHealthCondition"/>
+        <NamedIndividual IRI="#User_Female_Hypertension"/>
+        <NamedIndividual IRI="#Hypertension_Condition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#User_Female_Obesity"/>
+        <NamedIndividual IRI="#Female"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHealthCondition"/>
+        <NamedIndividual IRI="#User_Female_Obesity"/>
+        <NamedIndividual IRI="#Obesity_Condition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#User_Male_Both"/>
+        <NamedIndividual IRI="#Male"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHealthCondition"/>
+        <NamedIndividual IRI="#User_Male_Both"/>
+        <NamedIndividual IRI="#Hypertension_Condition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHealthCondition"/>
+        <NamedIndividual IRI="#User_Male_Both"/>
+        <NamedIndividual IRI="#Obesity_Condition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#User_Male_Hypertension"/>
+        <NamedIndividual IRI="#Male"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHealthCondition"/>
+        <NamedIndividual IRI="#User_Male_Hypertension"/>
+        <NamedIndividual IRI="#Hypertension_Condition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#User_Male_Obesity"/>
+        <NamedIndividual IRI="#Male"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHealthCondition"/>
+        <NamedIndividual IRI="#User_Male_Obesity"/>
+        <NamedIndividual IRI="#Obesity_Condition"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+        <NamedIndividual IRI="#BBQ_Chicken_Salad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">168</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+        <NamedIndividual IRI="#BBQ_Chicken_Salad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">34</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPotassium_g"/>
+        <NamedIndividual IRI="#BBQ_Chicken_Salad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">432</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProtein_g"/>
+        <NamedIndividual IRI="#BBQ_Chicken_Salad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+        <NamedIndividual IRI="#BBQ_Chicken_Salad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSodium_mg"/>
+        <NamedIndividual IRI="#BBQ_Chicken_Salad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">473</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+        <NamedIndividual IRI="#BBQ_Chicken_Salad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalFat_g"/>
+        <NamedIndividual IRI="#BBQ_Chicken_Salad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalSugars_g"/>
+        <NamedIndividual IRI="#BBQ_Chicken_Salad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Ingredients"/>
+        <NamedIndividual IRI="#BBQ_Chicken_Salad"/>
+        <Literal>2 skinless, boneless chicken breast halves
+
+4 stalks celery, chopped
+
+1 large red bell pepper, diced
+
+½ red onion, diced
+
+1 (8.75 ounce) can sweet corn, drained
+
+¼ cup barbeque sauce
+
+2 tablespoons fat-free mayonnaise</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+        <NamedIndividual IRI="#Cheeseburger_Casserole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">449</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+        <NamedIndividual IRI="#Cheeseburger_Casserole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">67</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPotassium_g"/>
+        <NamedIndividual IRI="#Cheeseburger_Casserole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">541</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProtein_g"/>
+        <NamedIndividual IRI="#Cheeseburger_Casserole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+        <NamedIndividual IRI="#Cheeseburger_Casserole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSodium_mg"/>
+        <NamedIndividual IRI="#Cheeseburger_Casserole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">744</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+        <NamedIndividual IRI="#Cheeseburger_Casserole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">44</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalFat_g"/>
+        <NamedIndividual IRI="#Cheeseburger_Casserole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalSugars_g"/>
+        <NamedIndividual IRI="#Cheeseburger_Casserole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Ingredients"/>
+        <NamedIndividual IRI="#Cheeseburger_Casserole"/>
+        <Literal>cooking spray
+
+½ pound ground beef
+
+2 medium onions, chopped
+
+1 (28 ounce) can diced tomatoes with herbs, undrained
+
+½ cup water, or as needed (Optional)
+
+2 cups elbow macaroni
+
+1 cup frozen corn
+
+1 green bell pepper, chopped
+
+2 tablespoons minced garlic
+
+1 tablespoon soy sauce
+
+1 tablespoon chili powder
+
+1 teaspoon Italian seasoning
+
+ground black pepper to taste
+
+2 cups shredded Mexican cheese blend</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+        <NamedIndividual IRI="#Chicken_Parmesan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">471</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+        <NamedIndividual IRI="#Chicken_Parmesan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">187</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPotassium_g"/>
+        <NamedIndividual IRI="#Chicken_Parmesan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">389</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProtein_g"/>
+        <NamedIndividual IRI="#Chicken_Parmesan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">42</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+        <NamedIndividual IRI="#Chicken_Parmesan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSodium_mg"/>
+        <NamedIndividual IRI="#Chicken_Parmesan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">840</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+        <NamedIndividual IRI="#Chicken_Parmesan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalFat_g"/>
+        <NamedIndividual IRI="#Chicken_Parmesan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalSugars_g"/>
+        <NamedIndividual IRI="#Chicken_Parmesan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Ingredients"/>
+        <NamedIndividual IRI="#Chicken_Parmesan"/>
+        <Literal>4 skinless, boneless chicken breast halves
+
+salt and freshly ground black pepper to taste
+
+2 large eggs
+
+1 cup panko bread crumbs, or more as needed
+
+¾ cup grated Parmesan cheese, divided
+
+2 tablespoons all-purpose flour, or more if needed
+
+½ cup olive oil for frying, or as needed
+
+½ cup prepared tomato sauce
+
+¼ cup fresh mozzarella, cut into small cubes
+
+¼ cup chopped fresh basil
+
+½ cup grated provolone cheese
+
+2 teaspoons olive oil</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+        <NamedIndividual IRI="#Chinese_Fried_Noodles"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">161</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+        <NamedIndividual IRI="#Chinese_Fried_Noodles"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPotassium_g"/>
+        <NamedIndividual IRI="#Chinese_Fried_Noodles"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">144</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProtein_g"/>
+        <NamedIndividual IRI="#Chinese_Fried_Noodles"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+        <NamedIndividual IRI="#Chinese_Fried_Noodles"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSodium_mg"/>
+        <NamedIndividual IRI="#Chinese_Fried_Noodles"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">294</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+        <NamedIndividual IRI="#Chinese_Fried_Noodles"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalFat_g"/>
+        <NamedIndividual IRI="#Chinese_Fried_Noodles"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalSugars_g"/>
+        <NamedIndividual IRI="#Chinese_Fried_Noodles"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Ingredients"/>
+        <NamedIndividual IRI="#Chinese_Fried_Noodles"/>
+        <Literal>2 (3 ounce) packages soy sauce-flavored ramen noodles with seasoning packets
+
+2 tablespoons vegetable oil, divided
+
+3 large eggs, beaten
+
+2 teaspoons vegetable oil, divided
+
+4 green onions, thinly sliced
+
+1 small carrot, peeled and grated
+
+½ cup green peas
+
+¼ cup red bell pepper, minced
+
+2 tablespoons sesame oil
+
+1 teaspoon sesame oil, or to taste
+
+1 teaspoon soy sauce, or to taste</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+        <NamedIndividual IRI="#Crispy_Fried_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">489</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+        <NamedIndividual IRI="#Crispy_Fried_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">116</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPotassium_g"/>
+        <NamedIndividual IRI="#Crispy_Fried_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">385</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProtein_g"/>
+        <NamedIndividual IRI="#Crispy_Fried_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+        <NamedIndividual IRI="#Crispy_Fried_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSodium_mg"/>
+        <NamedIndividual IRI="#Crispy_Fried_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">140</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+        <NamedIndividual IRI="#Crispy_Fried_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalFat_g"/>
+        <NamedIndividual IRI="#Crispy_Fried_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalSugars_g"/>
+        <NamedIndividual IRI="#Crispy_Fried_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Ingredients"/>
+        <NamedIndividual IRI="#Crispy_Fried_Chicken"/>
+        <Literal>1 (4 pound) chicken, cut into pieces
+
+1 cup buttermilk
+
+2 cups all-purpose flour for coating
+
+1 teaspoon paprika
+
+salt and pepper to taste
+
+2 quarts vegetable oil for frying</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+        <NamedIndividual IRI="#Fettuccine_Alfredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">964</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+        <NamedIndividual IRI="#Fettuccine_Alfredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">184</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPotassium_g"/>
+        <NamedIndividual IRI="#Fettuccine_Alfredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">285</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProtein_g"/>
+        <NamedIndividual IRI="#Fettuccine_Alfredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+        <NamedIndividual IRI="#Fettuccine_Alfredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSodium_mg"/>
+        <NamedIndividual IRI="#Fettuccine_Alfredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">582</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+        <NamedIndividual IRI="#Fettuccine_Alfredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">84</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalFat_g"/>
+        <NamedIndividual IRI="#Fettuccine_Alfredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">61</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalSugars_g"/>
+        <NamedIndividual IRI="#Fettuccine_Alfredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Ingredients"/>
+        <NamedIndividual IRI="#Fettuccine_Alfredo"/>
+        <Literal>24 ounces dry fettuccine pasta
+
+1 cup butter
+
+¾ pint heavy cream
+
+salt and pepper to taste
+
+1 dash garlic salt
+
+¾ cup grated Romano cheese
+
+½ cup grated Parmesan cheese</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+        <NamedIndividual IRI="#French_Onion_Soup"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">618</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+        <NamedIndividual IRI="#French_Onion_Soup"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">114</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPotassium_g"/>
+        <NamedIndividual IRI="#French_Onion_Soup"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">543</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProtein_g"/>
+        <NamedIndividual IRI="#French_Onion_Soup"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+        <NamedIndividual IRI="#French_Onion_Soup"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSodium_mg"/>
+        <NamedIndividual IRI="#French_Onion_Soup"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3241</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+        <NamedIndividual IRI="#French_Onion_Soup"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">39</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalFat_g"/>
+        <NamedIndividual IRI="#French_Onion_Soup"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">36</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Ingredients"/>
+        <NamedIndividual IRI="#French_Onion_Soup"/>
+        <Literal>4 tablespoons butter
+
+2 large red onions, thinly sliced
+
+2 large sweet onions, thinly sliced
+
+1 teaspoon salt
+
+1 (48 fluid ounce) can chicken broth
+
+1 (14 ounce) can beef broth
+
+½ cup red wine
+
+1 tablespoon Worcestershire sauce
+
+2 sprigs fresh parsley
+
+1 sprig fresh thyme leaves
+
+1 bay leaf
+
+1 tablespoon balsamic vinegar
+
+salt and freshly ground black pepper to taste
+
+4 thick slices French bread
+
+8 slices Gruyère cheese, at room temperature
+
+½ cup shredded Asiago cheese, at room temperature
+
+4 pinches paprika</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+        <NamedIndividual IRI="#Fried_Rice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">516</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+        <NamedIndividual IRI="#Fried_Rice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">159</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPotassium_g"/>
+        <NamedIndividual IRI="#Fried_Rice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">319</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProtein_g"/>
+        <NamedIndividual IRI="#Fried_Rice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+        <NamedIndividual IRI="#Fried_Rice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSodium_mg"/>
+        <NamedIndividual IRI="#Fried_Rice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">968</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+        <NamedIndividual IRI="#Fried_Rice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">64</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalFat_g"/>
+        <NamedIndividual IRI="#Fried_Rice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Ingredients"/>
+        <NamedIndividual IRI="#Fried_Rice"/>
+        <Literal>1 ⅓ cups uncooked white rice
+
+cup water
+
+3 eggs, lightly beaten
+
+¼ teaspoon salt
+
+⅛ teaspoon ground black pepper
+
+3 teaspoons vegetable oil, divided
+
+¼ pound bacon, cut into strips
+
+⅛ cup soy sauce
+
+1 (10 ounce) package frozen green peas, thawed
+
+2 green onions, chopped</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+        <NamedIndividual IRI="#Grilled_Chicken_Breasts"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">405</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+        <NamedIndividual IRI="#Grilled_Chicken_Breasts"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">145</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPotassium_g"/>
+        <NamedIndividual IRI="#Grilled_Chicken_Breasts"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">495</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProtein_g"/>
+        <NamedIndividual IRI="#Grilled_Chicken_Breasts"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">54</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+        <NamedIndividual IRI="#Grilled_Chicken_Breasts"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSodium_mg"/>
+        <NamedIndividual IRI="#Grilled_Chicken_Breasts"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1042</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+        <NamedIndividual IRI="#Grilled_Chicken_Breasts"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalFat_g"/>
+        <NamedIndividual IRI="#Grilled_Chicken_Breasts"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalSugars_g"/>
+        <NamedIndividual IRI="#Grilled_Chicken_Breasts"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Ingredients"/>
+        <NamedIndividual IRI="#Grilled_Chicken_Breasts"/>
+        <Literal>6 (6 ounce) skinless, boneless chicken breasts
+
+1/4 cup olive oil
+
+3 tablespoons Dijon mustard
+
+3 tablespoons honey
+
+2 tablespoons soy sauce
+
+2 tablespoons lemon juice
+
+3 cloves garlic, finely minced
+
+1 1/2 teaspoons onion powder
+
+1/2 teaspoon ground ginger
+
+2 teaspoons kosher salt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+        <NamedIndividual IRI="#Grilled_Lemon_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">264</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+        <NamedIndividual IRI="#Grilled_Lemon_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">68</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPotassium_g"/>
+        <NamedIndividual IRI="#Grilled_Lemon_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">348</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProtein_g"/>
+        <NamedIndividual IRI="#Grilled_Lemon_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+        <NamedIndividual IRI="#Grilled_Lemon_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSodium_mg"/>
+        <NamedIndividual IRI="#Grilled_Lemon_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">462</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+        <NamedIndividual IRI="#Grilled_Lemon_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalFat_g"/>
+        <NamedIndividual IRI="#Grilled_Lemon_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalSugars_g"/>
+        <NamedIndividual IRI="#Grilled_Lemon_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Ingredients"/>
+        <NamedIndividual IRI="#Grilled_Lemon_Chicken"/>
+        <Literal>⅓ cup lemon juice
+
+¼ cup olive oil
+
+1 tablespoon Dijon mustard
+
+2 large cloves garlic, finely chopped
+
+2 tablespoons finely chopped red bell pepper
+
+½ teaspoon salt
+
+¼ teaspoon ground black pepper
+
+4 skinless, boneless chicken breast halves</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+        <NamedIndividual IRI="#Ham_and_Cheese_Casserole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">454</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+        <NamedIndividual IRI="#Ham_and_Cheese_Casserole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">164</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPotassium_g"/>
+        <NamedIndividual IRI="#Ham_and_Cheese_Casserole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">279</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProtein_g"/>
+        <NamedIndividual IRI="#Ham_and_Cheese_Casserole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+        <NamedIndividual IRI="#Ham_and_Cheese_Casserole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSodium_mg"/>
+        <NamedIndividual IRI="#Ham_and_Cheese_Casserole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">831</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+        <NamedIndividual IRI="#Ham_and_Cheese_Casserole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalFat_g"/>
+        <NamedIndividual IRI="#Ham_and_Cheese_Casserole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">27</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalSugars_g"/>
+        <NamedIndividual IRI="#Ham_and_Cheese_Casserole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Ingredients"/>
+        <NamedIndividual IRI="#Ham_and_Cheese_Casserole"/>
+        <Literal>18 (1 ounce) slices white bread, cubed
+
+8 ounces cooked ham, cubed
+
+2 cups shredded Cheddar cheese
+
+1 ½ cups diced Swiss cheese
+
+6 eggs
+
+3 ½ cups milk
+
+½ teaspoon onion powder
+
+2 cups crushed cornflakes cereal
+
+½ cup butter, melted</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+        <NamedIndividual IRI="#Indian_Butter_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">408</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+        <NamedIndividual IRI="#Indian_Butter_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">107</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPotassium_g"/>
+        <NamedIndividual IRI="#Indian_Butter_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">625</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProtein_g"/>
+        <NamedIndividual IRI="#Indian_Butter_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+        <NamedIndividual IRI="#Indian_Butter_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSodium_mg"/>
+        <NamedIndividual IRI="#Indian_Butter_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">523</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+        <NamedIndividual IRI="#Indian_Butter_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalFat_g"/>
+        <NamedIndividual IRI="#Indian_Butter_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalSugars_g"/>
+        <NamedIndividual IRI="#Indian_Butter_Chicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Ingredients"/>
+        <NamedIndividual IRI="#Indian_Butter_Chicken"/>
+        <Literal>2 tablespoons peanut oil, divided
+
+1 shallot, finely chopped
+
+¼ white onion, chopped
+
+2 tablespoons butter
+
+1 tablespoon ginger garlic paste
+
+2 teaspoons lemon juice
+
+2 teaspoons garam masala, divided
+
+1 teaspoon chili powder
+
+1 teaspoon ground cumin
+
+1 bay leaf
+
+1 cup tomato puree
+
+1 cup half-and-half
+
+¼ cup plain yogurt
+
+1 pinch salt and ground black pepper to taste
+
+1 pound boneless, skinless chicken thighs, cut into bite-size pieces
+
+¼ teaspoon cayenne pepper, or to taste
+
+1 tablespoon cornstarch
+
+¼ cup water</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+        <NamedIndividual IRI="#Malaysian_Nasi_Lemak"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">578</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+        <NamedIndividual IRI="#Malaysian_Nasi_Lemak"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">128</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPotassium_g"/>
+        <NamedIndividual IRI="#Malaysian_Nasi_Lemak"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">473</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProtein_g"/>
+        <NamedIndividual IRI="#Malaysian_Nasi_Lemak"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+        <NamedIndividual IRI="#Malaysian_Nasi_Lemak"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSodium_mg"/>
+        <NamedIndividual IRI="#Malaysian_Nasi_Lemak"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">230</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+        <NamedIndividual IRI="#Malaysian_Nasi_Lemak"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">57</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalFat_g"/>
+        <NamedIndividual IRI="#Malaysian_Nasi_Lemak"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalSugars_g"/>
+        <NamedIndividual IRI="#Malaysian_Nasi_Lemak"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Ingredients"/>
+        <NamedIndividual IRI="#Malaysian_Nasi_Lemak"/>
+        <Literal>Rice:
+
+2 cups coconut milk
+
+2 cups water
+
+2 cups long grain rice, rinsed and drained
+
+1 (1/2 inch) piece fresh ginger, peeled and thinly sliced
+
+¼ teaspoon ground ginger
+
+1 whole bay leaf
+
+salt to taste
+
+Garnish:
+
+1 cup oil for frying
+
+1 cup raw peanuts
+
+1 (4 ounce) package white anchovies, washed
+
+4 large hard-boiled eggs, peeled and halved
+
+1 medium cucumber, sliced
+
+Sauce:
+
+2 tablespoons vegetable oil
+
+1 medium onion, sliced
+
+3 medium shallots, thinly sliced
+
+3 cloves garlic, thinly sliced
+
+2 teaspoons chile paste
+
+1 tablespoon water, or more as needed (Optional)
+
+1 (4 ounce) package white anchovies, washed
+
+¼ cup tamarind juice
+
+3 tablespoons white sugar
+
+salt to taste</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+        <NamedIndividual IRI="#Sausage_Crescent_Rolls"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">225</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+        <NamedIndividual IRI="#Sausage_Crescent_Rolls"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPotassium_g"/>
+        <NamedIndividual IRI="#Sausage_Crescent_Rolls"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">65</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProtein_g"/>
+        <NamedIndividual IRI="#Sausage_Crescent_Rolls"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+        <NamedIndividual IRI="#Sausage_Crescent_Rolls"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSodium_mg"/>
+        <NamedIndividual IRI="#Sausage_Crescent_Rolls"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">363</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+        <NamedIndividual IRI="#Sausage_Crescent_Rolls"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalFat_g"/>
+        <NamedIndividual IRI="#Sausage_Crescent_Rolls"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalSugars_g"/>
+        <NamedIndividual IRI="#Sausage_Crescent_Rolls"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Ingredients"/>
+        <NamedIndividual IRI="#Sausage_Crescent_Rolls"/>
+        <Literal>1 pound fresh, ground spicy pork sausage
+
+1 (8 ounce) package cream cheese
+
+2 (8 ounce) packages refrigerated crescent rolls
+
+1 egg white, lightly beaten
+
+1 tablespoon poppy seeds</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+        <NamedIndividual IRI="#Tiramisu_Cheesecake"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">651</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+        <NamedIndividual IRI="#Tiramisu_Cheesecake"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">165</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPotassium_g"/>
+        <NamedIndividual IRI="#Tiramisu_Cheesecake"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">239</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProtein_g"/>
+        <NamedIndividual IRI="#Tiramisu_Cheesecake"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+        <NamedIndividual IRI="#Tiramisu_Cheesecake"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSodium_mg"/>
+        <NamedIndividual IRI="#Tiramisu_Cheesecake"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">392</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+        <NamedIndividual IRI="#Tiramisu_Cheesecake"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">27</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalFat_g"/>
+        <NamedIndividual IRI="#Tiramisu_Cheesecake"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">56</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalSugars_g"/>
+        <NamedIndividual IRI="#Tiramisu_Cheesecake"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Ingredients"/>
+        <NamedIndividual IRI="#Tiramisu_Cheesecake"/>
+        <Literal>1 cup boiling water
+
+2 tablespoons instant espresso coffee powder, divided
+
+6 tablespoons coffee liqueur, such as Mr. Black, divided
+
+2 (8-ounce packages) mascarpone cheese, softened
+
+2( 8-ounce) packages cream cheese, softened
+
+1 cup powdered sugar
+
+1/4 teaspoon salt
+
+1 tablespoon vanilla extract
+
+1 (7-ounce) package crisp Italian ladyfingers (savoiardi), divided
+
+1 cup sliced almonds, toasted
+
+2 tablespoons white sugar
+
+1/3 cup butter, melted
+
+2 cups whipping cream
+
+unsweetened cocoa powder for dusting, as needed
+
+12 chocolate covered espresso beans</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+        <NamedIndividual IRI="#Malaysian_(Roti_Canai)_with_Curried_Lentil_Dip"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">565</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+        <NamedIndividual IRI="#Malaysian_(Roti_Canai)_with_Curried_Lentil_Dip"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">58</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPotassium_g"/>
+        <NamedIndividual IRI="#Malaysian_(Roti_Canai)_with_Curried_Lentil_Dip"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">562</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProtein_g"/>
+        <NamedIndividual IRI="#Malaysian_(Roti_Canai)_with_Curried_Lentil_Dip"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+        <NamedIndividual IRI="#Malaysian_(Roti_Canai)_with_Curried_Lentil_Dip"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSodium_mg"/>
+        <NamedIndividual IRI="#Malaysian_(Roti_Canai)_with_Curried_Lentil_Dip"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">811</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+        <NamedIndividual IRI="#Malaysian_(Roti_Canai)_with_Curried_Lentil_Dip"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">67</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalFat_g"/>
+        <NamedIndividual IRI="#Malaysian_(Roti_Canai)_with_Curried_Lentil_Dip"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">27</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalSugars_g"/>
+        <NamedIndividual IRI="#Malaysian_(Roti_Canai)_with_Curried_Lentil_Dip"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Ingredients"/>
+        <NamedIndividual IRI="#Malaysian_(Roti_Canai)_with_Curried_Lentil_Dip"/>
+        <Literal>For the Roti Canai:
+
+4 cups bread flour
+
+2 tablespoons white sugar
+
+1 ½ teaspoons kosher salt
+
+1 large egg, beaten
+
+3 tablespoons unsalted butter, melted
+
+1 ¼ cups water
+
+2 teaspoons vegetable oil
+
+Curried Lentil Dip:
+
+2 tablespoons unsalted butter
+
+½ cup diced yellow onion
+
+2 teaspoons grated fresh ginger
+
+4 cloves garlic, minced
+
+1 ½ teaspoons kosher salt, or more to taste
+
+2 tablespoons curry powder
+
+1 teaspoon ground paprika
+
+1 teaspoon ground cumin
+
+½ teaspoon black pepper
+
+½ teaspoon cayenne pepper
+
+¼ cup tomato paste
+
+3 cups cold water
+
+1 (14 ounce) can full-fat coconut milk
+
+1 cup dried red lentils
+
+¼ cup unsalted butter, melted, or more as needed
+
+2 tablespoons chopped fresh cilantro
+
+1 tablespoon finely chopped serrano pepper</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGender"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHealthCondition"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRiskFactorFor"/>
+        <Class IRI="#Meal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSuitableFor"/>
+        <Class IRI="#Meal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#recommendedFor"/>
+        <Class IRI="#Meal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGender"/>
+        <Class IRI="#Gender"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHealthCondition"/>
+        <Class IRI="http://www.semanticweb.org/3raoo/ontologies/2025/10/SmallOntology#HealthCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRiskFactorFor"/>
+        <Class IRI="http://purl.obolibrary.org/obo/DOID_10763"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRiskFactorFor"/>
+        <Class IRI="http://purl.obolibrary.org/obo/DOID_9970"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSuitableFor"/>
+        <Class IRI="http://purl.obolibrary.org/obo/DOID_10763"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSuitableFor"/>
+        <Class IRI="http://purl.obolibrary.org/obo/DOID_9970"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#recommendedFor"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+        <Class IRI="#Meal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+        <Class IRI="#Meal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPotassium_g"/>
+        <Class IRI="#Meal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasProtein_g"/>
+        <Class IRI="#Meal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+        <Class IRI="#Meal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSodium_mg"/>
+        <Class IRI="#Meal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+        <Class IRI="#Meal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTotalFat_g"/>
+        <Class IRI="#Meal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTotalSugars_g"/>
+        <Class IRI="#Meal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_Ingredients"/>
+        <Class IRI="#Meal"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCholesterol_mg"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPotassium_g"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasProtein_g"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasServingsPerRecipe"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSodium_mg"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTotalCarbohydrate_g"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTotalFat_g"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTotalSugars_g"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_Ingredients"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Obesity Risk from High Calories</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#HighCalorieMeal"/>
+                <Variable IRI="http://www.semanticweb.org/3raoo/ontologies/2025/10/SmallOntology_V4/m"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isRiskFactorFor"/>
+                <Variable IRI="http://www.semanticweb.org/3raoo/ontologies/2025/10/SmallOntology_V4/m"/>
+                <NamedIndividual IRI="#Obesity_Condition"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Hypertension Risk from High Sodium</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#HighSodiumMeal"/>
+                <Variable IRI="http://www.semanticweb.org/3raoo/ontologies/2025/10/SmallOntology_V4/m"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isRiskFactorFor"/>
+                <Variable IRI="http://www.semanticweb.org/3raoo/ontologies/2025/10/SmallOntology_V4/m"/>
+                <NamedIndividual IRI="#Hypertension_Condition"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Hypertension Benefit from Low Sodium</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#HypertensionFriendlyMeal"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSuitableFor"/>
+                <Variable IRI="/m"/>
+                <NamedIndividual IRI="#Hypertension_Condition"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Female with Both Conditions</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#User"/>
+                <Variable IRI="/u"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasGender"/>
+                <Variable IRI="/u"/>
+                <NamedIndividual IRI="#Female"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasHealthCondition"/>
+                <Variable IRI="/u"/>
+                <NamedIndividual IRI="#Hypertension_Condition"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasHealthCondition"/>
+                <Variable IRI="/u"/>
+                <NamedIndividual IRI="#Obesity_Condition"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Meal"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#ObesityFriendlyMeal"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#HypertensionFriendlyMeal"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#recommendedFor"/>
+                <Variable IRI="/m"/>
+                <Variable IRI="/u"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Male with Both Conditions</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#User"/>
+                <Variable IRI="/u"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasGender"/>
+                <Variable IRI="/u"/>
+                <NamedIndividual IRI="#Male"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasHealthCondition"/>
+                <Variable IRI="/u"/>
+                <NamedIndividual IRI="#Hypertension_Condition"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasHealthCondition"/>
+                <Variable IRI="/u"/>
+                <NamedIndividual IRI="#Obesity_Condition"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Meal"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#ObesityFriendlyMeal"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#HypertensionFriendlyMeal"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#recommendedFor"/>
+                <Variable IRI="/m"/>
+                <Variable IRI="/u"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Low Sodium Classification (Hypertension Friendly)</Literal>
+        </Annotation>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSodium_mg"/>
+                <Variable IRI="http://www.semanticweb.org/3raoo/ontologies/2025/10/SmallOntology_V4/m"/>
+                <Variable IRI="http://www.semanticweb.org/3raoo/ontologies/2025/10/SmallOntology_V4/s"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="http://www.semanticweb.org/3raoo/ontologies/2025/10/SmallOntology_V4/s"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">600</Literal>
+            </BuiltInAtom>
+            <ClassAtom>
+                <Class IRI="#Meal"/>
+                <Variable IRI="http://www.semanticweb.org/3raoo/ontologies/2025/10/SmallOntology_V4/m"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#HypertensionFriendlyMeal"/>
+                <Variable IRI="http://www.semanticweb.org/3raoo/ontologies/2025/10/SmallOntology_V4/m"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Female with Obesity - Lower calorie</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#User"/>
+                <Variable IRI="/u"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasGender"/>
+                <Variable IRI="/u"/>
+                <NamedIndividual IRI="#Female"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasHealthCondition"/>
+                <Variable IRI="/u"/>
+                <NamedIndividual IRI="#Obesity_Condition"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Meal"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+                <Variable IRI="/m"/>
+                <Variable IRI="/c"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="/c"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#recommendedFor"/>
+                <Variable IRI="/m"/>
+                <Variable IRI="/u"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Male with Obesity - Higher calorie</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#User"/>
+                <Variable IRI="/u"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasGender"/>
+                <Variable IRI="/u"/>
+                <NamedIndividual IRI="#Male"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasHealthCondition"/>
+                <Variable IRI="/u"/>
+                <NamedIndividual IRI="#Obesity_Condition"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Meal"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+                <Variable IRI="/m"/>
+                <Variable IRI="/c"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="/c"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">600</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#recommendedFor"/>
+                <Variable IRI="/m"/>
+                <Variable IRI="/u"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Hypertension - Low Sodium Meals (both gender)</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#User"/>
+                <Variable IRI="/u"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasHealthCondition"/>
+                <Variable IRI="/u"/>
+                <NamedIndividual IRI="#Hypertension_Condition"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Meal"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSodium_mg"/>
+                <Variable IRI="/m"/>
+                <Variable IRI="/s"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="/s"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">600</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#recommendedFor"/>
+                <Variable IRI="/m"/>
+                <Variable IRI="/u"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>High Calorie Classification</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Meal"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+                <Variable IRI="/m"/>
+                <Variable IRI="/c"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/c"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#HighCalorieMeal"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Low Calorie Classification (Obesity Friendly)</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Meal"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasCaloriesPerServing_kcal"/>
+                <Variable IRI="/m"/>
+                <Variable IRI="/c"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/c"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#ObesityFriendlyMeal"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>High Sodium Classification</Literal>
+        </Annotation>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSodium_mg"/>
+                <Variable IRI="/m"/>
+                <Variable IRI="/s"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Meal"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/s"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">600</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#HighSodiumMeal"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Obesity Benefit from Low Calories</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#ObesityFriendlyMeal"/>
+                <Variable IRI="http://www.semanticweb.org/3raoo/ontologies/2025/10/SmallOntology_V4/m"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSuitableFor"/>
+                <Variable IRI="http://www.semanticweb.org/3raoo/ontologies/2025/10/SmallOntology_V4/m"/>
+                <NamedIndividual IRI="#Obesity_Condition"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
